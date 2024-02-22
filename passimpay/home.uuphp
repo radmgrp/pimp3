@@ -1,0 +1,267 @@
+
+ 
+<?php
+/*
+Template Name: Главная
+
+*/
+
+get_header(); 
+?>
+  bb
+
+ <section class="section_banner">
+            <div class="container"> 
+              <div class="banner_container">  
+              <div class="row"> 
+                <div class="col col-md-5">
+<form class="banner_form">
+  <div class="banner_form_title">Быстрая заявка</div>
+<p><input type="date"></p>
+<p><input type="date"></p>
+<p><input type="text"></p>
+<p><input type="text"></p>
+<p><input type="submit" value="Выбрать автомобиль"></p>
+</form>
+                </div>
+                <div class="col col-md-7">
+                  <div class="banner_soc">  Прокат авто в Грузии<ul class="banner_soc-icons">
+                    <li><a href=""><img src="img/wtc.svg" width="37"></a></li>
+                    <li><a href=""><img src="img/inst.svg" width="37"></a></li>
+                    <li><a href=""><img src="img/tg.svg" width="37"></a></li>
+                  
+                  </ul></div>
+                  <div class="banner_title">удобно как свой автомобиль</div>
+                
+                </div>
+              </div>
+
+              </div>
+            </div>
+          </section>
+
+ 
+
+          <section class="section_arenda">
+            <div class="container"> 
+              
+
+              <div class="arenda_row"> 
+                <div class="arenda_col arenda_col1"><h3 class="h3">Хотите арендовать машину?</h3> 
+                <div class="arenda_text">
+                  Таким образом консультация с широким активом играет важную роль в формировании дальнейших направлений развития. С другой стороны консультация с широким активом способствует подготовки и реализации направлений прогрессивного развития. Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.
+<p></p><b>С другой стороны постоянный </b></p>
+                </div>
+                
+                </div>
+                <div class="arenda_col arenda_col2"><div><img src="img/auto1.jpg" alt=""> <div class="section_arenda_gradient">Легковые автомобили</div></div>
+
+                </div>
+
+             
+            </div>
+          </section>
+
+
+          <section class="section_start">
+            <div class="container"> 
+              <div class="col col-md-7"><h3 class="h3">Начать легче чем кажется</h3> </div> 
+              <div class="start_items"> 
+                <div class="start_item">  
+<img src="img/start1.png" alt="">
+
+                  <div class="start_item_bottom"> 777   </div>
+                </div>
+                <div class="start_item">  
+                  <img src="img/start2.png" alt="">
+                  
+                                    <div class="start_item_bottom"> 777   </div>
+                                  </div>
+                                  <div class="start_item">  
+                                    <img src="img/start3.png" alt="">
+                                    
+                                                      <div class="start_item_bottom"> 777   </div>
+                                                    </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section_book">
+            <div class="container"> 
+             <h3 class="h3">Забронировать авто</h3> 
+             
+             
+
+            </div>
+            <div class="book_opts">  
+            <div class="container"> 
+              <div class="book_opts_items"> 
+                <div class="book_opts_item"> <img src="img/book_opt1.svg" alt="" width="65"><div>Комфортабельные условия</div></div> 
+                <div class="book_opts_item"> <img src="img/book_opt2.svg" alt="" width="65"><div>Чистые и убранные салоны</div></div> 
+                <div class="book_opts_item"><img src="img/book_opt3.svg" alt="" width="65"><div>Техподдержка всегда на связи</div></div> 
+                <div class="book_opts_item"><img src="img/book_opt4.svg" alt="" width="65"><div>Удобная оплата онлайн или офлайн</div></div> 
+              </div>
+
+            </div>
+          </div>
+           
+ <div class="container"> 
+  
+     <form class="book_form">        
+     <div class="book_form_row">  
+      <div class="book_form_col"> место подачи <select>
+<?php
+$token=<<<EOD
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyJVU0VSX0ZPUl9TSVRFIiwiVVNFUl9GT1JfU0lURSJdLCJqdGkiOiJjMTgwZmYzMTM2Y2I0ZTZmYTczNmVkZDdiNGM0MDUxYiIsIm5iZiI6MTcwMDE0MTk3NywiZXhwIjoyMDE1NTAxOTc3LCJpYXQiOjE3MDAxNDE5NzcsImlzcyI6IldvcmtmbG93VGVjaG5vbG9neSJ9.dRMvgA1pmewj7EgnCE614R_Lqo_wj_EmBxF9Ir7zj6U
+EOD;
+
+ $url="http://46.8.19.99:9400/data_api/place_list";
+
+
+
+    $ch = curl_init($url);
+        
+    $headers = [];
+    $headers[] = 'Content-Type:application/json';
+   
+    $headers[] = "Authorization: Bearer ".$token;
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        
+
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+      
+
+  curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10); 
+ 
+    $result = curl_exec($ch);
+ $res=json_decode($result, true);
+ $str="";
+    foreach($res["places"] as $value){
+    
+    $str.="<option>".$value["title"]."</option>";
+    }
+    echo $str;
+    ?> 
+      
+      
+      
+      </select><?php
+$token=<<<EOD
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyJVU0VSX0ZPUl9TSVRFIiwiVVNFUl9GT1JfU0lURSJdLCJqdGkiOiJjMTgwZmYzMTM2Y2I0ZTZmYTczNmVkZDdiNGM0MDUxYiIsIm5iZiI6MTcwMDE0MTk3NywiZXhwIjoyMDE1NTAxOTc3LCJpYXQiOjE3MDAxNDE5NzcsImlzcyI6IldvcmtmbG93VGVjaG5vbG9neSJ9.dRMvgA1pmewj7EgnCE614R_Lqo_wj_EmBxF9Ir7zj6U
+EOD;
+
+ $url="http://46.8.19.99:9400/data_api/car_list";
+
+
+
+    $ch = curl_init($url);
+        
+    $headers = [];
+    $headers[] = 'Content-Type:application/json';
+   
+    $headers[] = "Authorization: Bearer ".$token;
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        
+
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+      
+
+  curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10); 
+ 
+    $result = curl_exec($ch);
+//echo $result;
+    ?> 
+      </div>
+      <div class="book_form_col"> место возврата<select><?php echo $str;?></select> </div>
+      <div class="book_form_col"> с <input type="datetime-local"> </div>
+      <div class="book_form_col"> по <input type="datetime-local"> </div> 
+      <div class=""> 
+<div><button class="book_form-clear">очистить фильтр</button></div> 
+  <div><button class="book_form-search">Поиск</button></div> </div>       
+      
+    </div>    
+     </form>  
+     <div class="book_cat">  
+     
+   <?php 
+     $params = array(
+	'post_type' => 'avto', 
+	'numberposts' => 16, 
+	'orderby' => 'date',
+	'order' => 'DESC', 
+    'post_status' => array('publish'),
+	'suppress_filters' => true 
+    );
+    
+    $posts = get_posts($params);
+    foreach( $posts as $post ) :
+    setup_postdata( $post ); 
+	?>
+     <div class="book_cat_item">
+        <img src="img/car.jpg" alt="">   
+        <div class="book_cat_item_mark"><?php the_title() ?></div>
+         <div class="book_cat_item_opts"> 
+           <div class="opt opt1"> 1 </div>
+           <div class="opt opt2"> 2 </div>
+           <div class="opt opt3"> 3 </div>
+           <div class="opt opt4"> 4 </div>  
+       </div>
+       <div class="book_cat_item-cost"><div class="left">BMW</div><div class="right">95 S <span>сутки</span></div></div>
+       <div class="book_cat_item-status">
+        <div class="st st1">свободна</div>
+        <div class="st st2">1.379</div>
+        <div class="st st3">4.8</div>
+      </div>
+      <a class="book_cat_item_button" href="<?php the_permalink() ?>">Выбрать</a>
+       </div>
+     
+   
+    
+    <?php
+endforeach;
+wp_reset_postdata(); 
+    
+    ?> 
+     
+     
+     
+  
+
+    </div>
+<div class="book_cat-more"><button class="book_cat-more-button">Посмотреть еще</button></div>
+            </div>
+
+          </section>
+
+
+
+
+          <section class="section_quiz">
+            <div class="container"> 
+              <h3 class="h3">Часто задаваемые вопросы</h3>
+             <ul class="quiz_list">
+              <li class="quiz_list_item">
+                <div class="quiz_list_item_title quiz_list_item_title1">2b2a29</div>
+                <div class="quiz_list_item_content">2b2a29</div>
+              
+              </li>
+              <li class="quiz_list_item quiz_list_item2">9</li>             
+              </ul>
+             
+            </div>
+          </section>
+
+          <section class="section__map">
+            <div class="container"> 
+             
+             
+            </div>
+          </section>
+          
+         
+
+	<?php //get_sidebar(); ?>
+</div><!-- .wrap -->
+
+<?php
+get_footer();

@@ -14,10 +14,10 @@
 	align-items: center;
 }
 @mixin bordert {
-	borrder-top: 1px solid #fff;
+	border-top: 1px solid #fff;
 }
 @mixin borderb {
-	borrder-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
 }
 @mixin radius {
 	width: 34px;

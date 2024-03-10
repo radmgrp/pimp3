@@ -1,0 +1,7 @@
+organization=radmgrp
+projectKey=radmgrp_pimp3
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.52970
+dashboardUrl=https://sonarcloud.io/dashboard?id=radmgrp_pimp3
+ceTaskId=AY3SO-Wc_OxsQjz9DdFk
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AY3SO-Wc_OxsQjz9DdFk

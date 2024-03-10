@@ -17,12 +17,12 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title><?php the_title(); ?></title>
 <link rel="profile" href="https://gmpg.org/xfn/11">
  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/logo/favicon.png">
 <?php wp_head(); ?>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="https://api-maps.yandex.ru/2.1/?lang=en_RU&amp;apikey=b4894c67-97fa-499c-86cc-30605c8b8a47" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.6.0.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/api.js" type="text/javascript"></script>
 
 	<style>

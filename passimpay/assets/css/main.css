@@ -748,11 +748,12 @@ p {
   transform: scale(1);
 }
 .header-wrapper .main-menu .cmn-grp {
-  display: flex;
+ display:flex;
   align-items: center;
   gap: 20px;
   display: none;
 }
+
 .header-wrapper .main-menu .cmn-grp:hover {
   cursor: pointer;
 }
@@ -1182,7 +1183,7 @@ p {
 .today__body .topsport__wrap .tsport__items {
   display: flex;
   align-items: center;
-  align-items: center;
+ 
   justify-content: space-between;
   padding: 10px 10px 10px;
   background: var(--signbet);
@@ -1194,7 +1195,7 @@ p {
 .today__body .topsport__wrap .tsport__items .tsport__itemsleft {
   display: flex;
   align-items: center;
-  align-items: center;
+ 
   gap: 0px 5px;
 }
 .today__body .topsport__wrap .tsport__items .tsport__itemsleft .icons {
@@ -1441,11 +1442,11 @@ p {
 .left__site__section .popular__events__left .prematch__wrap .nav .nav-link {
   background-color: unset;
   border: unset;
-  padding: 0;
+  
   font-size: 16px;
   font-weight: 600;
   color: var(--white);
-  padding: 10px 10px 10px;
+  padding: 10px 10px 10px 0px;
   position: relative;
 }
 .left__site__section .popular__events__left .prematch__wrap .nav .nav-link.active::before {
@@ -1624,7 +1625,7 @@ p {
 
 .main__table .heght__table__points {
   display: flex;
-  align-items: center;
+  
   gap: 10px 70px;
   padding: 24px 20px 4px;
   align-items: center;
@@ -1773,7 +1774,7 @@ p {
 .main__table .table__wrap .table__items .mart__pint__nextgo .mart__point__right .point__box-text {
   display: flex;
   align-items: center;
-  align-items: center;
+  
   gap: 5px;
   font-size: 18px;
   color: var(--textcolor);
@@ -1799,7 +1800,7 @@ p {
 }
 .main__table .table__wrap .table__footer {
   display: flex;
-  align-items: center;
+  
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px 15px;
@@ -1821,7 +1822,7 @@ p {
 .main__table .table__wrap .table__footer__nextgo .lobby {
   transition: all 0.4s;
   display: flex;
-  align-items: center;
+ 
   align-items: center;
   gap: 5px;
 }
@@ -1839,8 +1840,8 @@ p {
   gap: 10px 20px;
 }
 .nexttogo__tab .nav .nav-link {
-  border-radius: 30px;
-  padding: 5px 15px 7px;
+  
+  padding: 5px 15px 7px 0px;
   border: 1px solid rgba(138, 146, 171, 0.5);
   border-radius: 30px;
 }
@@ -1882,7 +1883,7 @@ p {
 .main__tabletennis .table__wrap .table__items .tableright__tennis {
   display: flex;
   align-items: center;
-  align-items: center;
+
 }
 .main__tabletennis .table__wrap .mart__point__two .mart__point__right {
   padding-left: 0px !important;
@@ -1890,7 +1891,7 @@ p {
 
 .main__basketballtable .table__wrap .table__items {
   display: flex;
-  align-items: center;
+ 
   align-items: center;
 }
 .main__basketballtable .table__wrap .table__items .t__items .t__items__left h6 span {
@@ -1901,26 +1902,26 @@ p {
 }
 .main__basketballtable .table__wrap .table__items .tablebasket__main__wrap {
   display: flex;
-  align-items: center;
+
   align-items: center;
 }
 .main__basketballtable .table__wrap .table__items .tablebasket__main__wrap .tablebasket__martpoin__wrap {
   display: flex;
   align-items: center;
-  align-items: center;
+
   gap: 0px 10px;
 }
 .main__basketballtable .table__wrap .table__items .martbas__pointlast .mart__point__left {
   display: flex;
   align-items: center;
-  align-items: center;
+ 
   gap: 0px 10px;
 }
 .main__basketballtable .table__wrap .table__items .martbas__pointlast .mart__point__left .aroow__text {
   width: 100px;
   display: flex;
   align-items: center;
-  align-items: center;
+ 
   gap: 0px 10px;
 }
 .main__basketballtable .table__wrap .table__items .martbas__pointlast .mart__point__left .aroow__text span {
@@ -2030,7 +2031,7 @@ p {
   border-radius: 10px;
   display: flex;
   align-items: center;
-  align-items: center;
+
   gap: 20px 15px;
 }
 .promo__items .promo__content h3 {
@@ -2174,7 +2175,7 @@ p {
 .horse__body .horse__s__left {
   display: flex;
   align-items: center;
-  align-items: center;
+ 
   gap: 10px;
 }
 .horse__body .horse__s__left p span {
@@ -2231,7 +2232,7 @@ p {
 .racing__tab .nav {
   display: flex;
   align-items: center;
-  align-items: center;
+ 
   gap: 5px 20px;
 }
 .racing__tab .nav .nav-link {
@@ -2312,7 +2313,7 @@ p {
 }
 .virtual__tabs .nav {
   display: flex;
-  align-items: center;
+
   align-items: center;
 }
 .virtual__tabs .nav .nav-item {
@@ -2350,7 +2351,7 @@ p {
 .world__cup__area .world__tabs .nav {
   display: flex;
   align-items: center;
-  align-items: center;
+ 
   gap: 10px 10px;
 }
 .world__cup__area .world__tabs .nav .nav-item .nav-link {
@@ -2465,7 +2466,7 @@ p {
   border-radius: 0 0 5px 5px;
 }
 .equator__match__result .match__box .devaided__box a {
-  width: 33.3333333333%;
+  
   padding: 10px 10px 10px;
   font-size: 10px;
   font-weight: 400;
@@ -2965,7 +2966,7 @@ p {
   padding: 0 0;
 }
 .register__modal .modal-content-custom .modal-header button {
-  background-image: none;
+ 
   background: url(../../assets/img/modal/cros.png) no-repeat;
   background-size: 20px;
   width: 10px;
@@ -3121,7 +3122,7 @@ p {
   font-size: 14px;
   font-weight: 400;
   background: #20283F;
-  border: unset;
+  
   width: 100%;
   padding: 13px 50px 15px 18px;
   outline: none;
@@ -3311,12 +3312,12 @@ p {
   gap: 15px 0px;
 }
 .dashboard__side__bar .account__menu li a {
-  display: block;
+ 
   background: var(--pointbox);
   border-radius: 10px;
   display: flex;
   align-items: center;
-  align-items: center;
+ 
   padding: 16px 20px 20px;
   gap: 10px;
   transition: all 0.4s;
@@ -3645,7 +3646,7 @@ p {
 .dashboard__body__wrap .account__body .account__email .add__email {
   display: flex;
   align-items: center;
-  align-items: center;
+ 
   gap: 5px;
 }
 .dashboard__body__wrap .account__body .account__email .add__email span {
@@ -3673,7 +3674,7 @@ p {
 .dashboard__body__wrap .account__body .language__box .language__wrap {
   display: flex;
   align-items: center;
-  align-items: center;
+  
   gap: 14px 30px;
 }
 .dashboard__body__wrap .account__body .language__box .language__wrap .nice-select {
@@ -3875,7 +3876,7 @@ p {
 .verification__box select {
   width: 100%;
   background: #1A233F;
-  border: none;
+ 
   color: var(--white);
   border: 1px solid #334476;
   border-radius: 10px;
@@ -4026,13 +4027,13 @@ p {
 .contact__preference__wrap .preference__items .preference__right {
   display: flex;
   align-items: center;
-  align-items: center;
+ 
   gap: 10px 20px;
 }
 .contact__preference__wrap .preference__items .preference__right .perfer__check {
   display: flex;
   align-items: center;
-  align-items: center;
+ 
   gap: 10px;
 }
 .contact__preference__wrap .preference__items .preference__right .perfer__check .form-check-input {
@@ -4337,7 +4338,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  align-items: center;
+  
 }
 .notification__wrap .notification__items:not(:last-child) {
   border-bottom: 1px solid rgba(138, 146, 171, 0.4);
@@ -4849,7 +4850,7 @@ p {
     background-color: var(--header) !important;
   }
   .main-menu {
-    background-color: var(--header) !important;
+  
     position: absolute !important;
     top: 100%;
     width: 100%;
@@ -4902,9 +4903,7 @@ p {
   .main-menu .cmn-grp {
     margin-top: 10px;
     padding-left: 10px !important;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+ 
     display: block !important;
   }
   .main-menu .cmn-grp .cmn--btn,
@@ -5435,7 +5434,7 @@ p {
     padding: 0px 0px 30px;
   }
   .register__modal .modal-content .modal-header button {
-    background-image: none;
+  
     background: url(../../assets/img/modal/cros.png) no-repeat;
     background-size: 20px;
     width: 10px;
